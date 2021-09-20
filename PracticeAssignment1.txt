@@ -1,0 +1,24 @@
+EXERCISE 1 ■ Summing numbers
+One of my favorite types of exercises involves reimplementing functionality that we’ve seen elsewhere, either inside of Python or in Unix. That’s the background for this next exercise, in which you’ll reimplement the sum (http://mng.bz/MdW2) function that comes with Python. That function takes a sequence of numbers and returns the sum of those numbers. So if you were to invoke sum([1,2,3]), the result would be 6.
+The challenge here is to write a mysum function that does the same thing as the built-in sum function. However, instead of taking a single sequence as a parameter, it should take a variable number of arguments. Thus, although you might invoke sum([1,2,3]), you’d instead invoke mysum(1,2,3) or mysum(10,20,30,40,50).
+NOTE The built-in sum function takes an optional second argument, which we’re ignoring here.
+And no, you shouldn’t use the built-in sum function to accomplish this! (You’d be amazed just how often someone asks me this question when I’m teaching courses.)
+This exercise is meant to help you think about not only numbers, but also the design of functions. And in particular, you should think about the types of parameters
+ 
+EXERCISE 1 ■ Summing numbers	9
+
+functions can take in Python. In many languages, you can define functions multiple 
+times, each with a different type signature (i.e., number of parameters, and parame- 
+ter types). In Python, only one function definition (i.e., the last time that the func- tion 
+was defined) sticks. The flexibility comes from appropriate use of the different 
+parameter types.
+
+
+EXERCISE 2 ■ Pig Latin
+Pig Latin (http://mng.bz/YrON) is a common children’s “secret” language in English- speaking countries. (It’s normally secret among children who forget that their parents were once children themselves.) The rules for translating words from English into Pig Latin are quite simple:
+	If the word begins with a vowel (a, e, i, o, or u), add “way” to the end of the word. So “air” becomes “airway” and “eat” becomes “eatway.”
+	If the word begins with any other letter, then we take the first letter, put it on    the end of the word, and then add “ay.” Thus, “python” becomes “ythonpay”   and “computer” becomes “omputercay.”
+(And yes, I recognize that the rules can be made more sophisticated. Let’s keep it sim- ple for the purposes of this exercise.)
+For this exercise, write a Python function (pig_latin) that takes a string as input, assumed to be an English word. The function should return the translation of this word into Pig Latin. You may assume that the word contains no capital letters or punctuation. This exercise isn’t meant to help you translate documents into Pig Latin for your job. (If that is your job, then I really have to question your career choices.) However, it demonstrates some of the powerful techniques that you should know when working with sequences, including searches, iteration, and slices. It’s hard to imagine a Python
+program that doesn’t include any of these techniques.
+
